@@ -1,0 +1,40 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a>
+                <img src="./pro.jpg" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://source.unsplash.com/400x400/?electronics,item" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img src="https://source.unsplash.com/400x400/?fashion,girls" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a>
+                <img  src="https://source.unsplash.com/400x400/?jewellery,women" alt="">
+                <h6>Jewllery</h6>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <ng-container *ngfor = "let item of productList">
+            <div class ="card col-md-3">
+                
+                <h5>{{item.img}}</h5>
+                <p></p>
+                <button class="btn btn-primary"> Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

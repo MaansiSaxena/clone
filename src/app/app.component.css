@@ -1,0 +1,7 @@
+.item{
+    padding: 6px;
+}
+.container:hover .middle {
+    opacity: 1;
+  }
+  
